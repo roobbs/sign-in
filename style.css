@@ -1,0 +1,74 @@
+:root {
+    --main-color: rgb(224, 242, 255);
+    --secondary-color: rgb(88, 133, 255);
+    --text-color: rgb(9, 21, 66);
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: min(40px, 10vh);
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.image-container{
+    flex: 40vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1.5rem;
+    position: relative;
+    background-image: url(./images/blue.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.travel{
+    position: absolute;
+    top: 10vw;
+    width: 40vw;
+    height: 150px;
+    background-color: rgba(246, 246, 246, 0.7);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    flex: 60vw;
+    padding: .5rem 0; 
+    font-weight: 700;
+    
+}
+.header{
+    padding-left: 2rem;
+}
+.sign-form{
+    background-color: var(--main-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    font-size: .4rem;
+}
+.form-row{
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+}
+.form-row label {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.form-row input{
+    background-color: var(--secondary-color);
+    border: none;
+    border-bottom: 5px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+}
