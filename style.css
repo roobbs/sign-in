@@ -6,7 +6,7 @@
     width: 100vw;
     background-color: var(--main-color);
     color: var(--text-color);
-    font-size: min(40px, 10vh);
+    font-size: min(38px, 10vh);
     font-family: "Helvetica", "Arial", sans-serif;
 }
 body{
@@ -20,7 +20,7 @@ body{
 }
 .image-container{
     flex: 40vw;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     font-size: 1.5rem;
     position: relative;
@@ -49,26 +49,57 @@ body{
 }
 .header{
     padding-left: 2rem;
+    padding-bottom: .5rem;
 }
 .sign-form{
     background-color: var(--main-color);
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: .5rem 2rem;
     font-size: .4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    gap: 1.5rem;
 }
 .form-row{
-    padding-left: 2rem;
-    padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 .form-row label {
-    width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 .form-row input{
     background-color: var(--secondary-color);
     border: none;
-    border-bottom: 5px solid var(--secondary-color);
     border-radius: 5px;
-    padding: 5px;
-    width: 90%;
+    border: 4px solid var(--secondary-color);
+    margin-bottom: .4rem;
+    width: 250px;
+    height: 25px;
+    font-weight: 700;
+    padding-left: 10px;
+    color: var(--main-color);
+}
+.form-row button{
+    background-color: var(--text-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .5rem;
+    font-weight: bold;
+    font-size: .4rem;
+}
+.form-row input::placeholder {
+    color: rgb(90, 90, 90);
+}
+.form-row input:focus{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 4px solid var(--text-color);
+    color: var(--text-color);
+    font-weight: 700;
+}
+.form-row input:valid {
+    border: 4px solid var(--text-color);
 }
