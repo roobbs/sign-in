@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | TravelGo!</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <main class="content">
@@ -13,22 +14,25 @@
             <div class="travel">TravelGo!</div>
         </div>
         <div class="form-container">
-            <div class="header">Start your next trip with Us!</div>
+            <div class="header">
+                <div>Start your next trip with Us!</div>
+                <div class="h1">You know you need something like this to help you realize your deepest dreams. Sign up now to get started.</div>
+            </div>
             <form action="#" method="get" class="sign-form">
                 <div class="form-row">
                     <label for="first-name">Name</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                    <input type="text" id="first-name" name="first-name" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
                 </div>
                 <div class="form-row">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required></div>
+                    <input type="text" id="last-name" name="last-name" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+"></div>
                 <div class="form-row">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required placeholder="hi@email.com">
                 </div>
                 <div class="form-row">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="123 123 1234">
                 </div>
                 <div class="form-row">
                     <label for="password">Password</label>
@@ -42,6 +46,7 @@
                     <button>Create Account</button>
                 </div>
             </form>
+            <div class="footer">Already have an Account? <div>Sign In</div></div>
         </div>
     </main>
 </body>
